@@ -4,17 +4,20 @@
   "description": "\"# tumblr example\"",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run sass\" \"npm run watch\"",
-    "server": "live-server ./dist",
-    "presass": "cp ./src/index.html ./dist/",
-    "sass": "node-sass -w ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap/scss/ -o ./dist/css/",
-    "watch": "copy-and-watch --watch src/**/*.{html}  dist/"
+    "start": "gulp start",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "server": "gulp server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.6.1",
     "copy-and-watch": "^0.1.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.9.1",
     "live-server": "^1.2.0",
     "node-sass": "^4.9.2"
   },
