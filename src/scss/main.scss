@@ -1,2 +1,97 @@
 // load vendor libs, but just what you need
-@import "vendor/bootstrap-custom";
+@import "vendor/bootstrap";
+
+$primary-color: #36465d;
+$primary-dark-color: #2d3a4e;
+$gray-color: #c6c6c6;
+$light-blue-color: #529ecc;
+$primary-light-blue-color: #d2dae6;
+
+.tumblr-nav{
+    background-color: $primary-color;
+    height: 70px;
+}
+
+.nav-icon{
+    margin-right: 35px;
+}
+
+.nav-icon-active
+{
+    background: $light-blue-color;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.search-box{
+    background-color: $primary-dark-color;
+    color: $gray-color;
+    border: 1px solid $primary-dark-color;
+    border-radius: 5px;
+    width: 315px;
+    height: 35px;
+    margin-left: 60px;
+}
+
+.container-tabs{
+    background: white;
+    height: 100px;
+    margin-left: 35px;
+    padding-left: 50px;
+}
+
+.tabs{
+    height: 50px;
+    width: 40px;
+    background: #2d3a4e;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.container-post
+{
+    background: white;
+    height: 565px;
+    margin-left: 35px;
+}
+
+.user-img{
+    width: 65px;
+    height: 65px;
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 65px;
+
+}
+
+.container-blogs{
+    background: white;
+    height: 400px;
+}
+.user-img-post
+{
+    width: 65px;
+    height: 65px;
+    border-radius: 3px;
+}
+
+.logo
+{
+    width: 20px;
+    height: 35px;
+    margin-left: 60px;
+    margin-right: 0px;
+}
+
+.search-icon{
+    width: 20px;
+    height: 20px;
+}
+
+main{
+    margin-top: 40px;
+}
+
+body{
+    background: $primary-light-blue-color;
+}
