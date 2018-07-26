@@ -8,18 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar tumblr-nav">
             <div class="d-flez align-items-start">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="login.html">
                     <img class="logo" src="img/tumblrIcon.png" alt="Tumblr">
                 </a>
                 <input class="search-box" type="text" placeholder="Search Tumblr">
             </div>
-            <div class="d-flez flex-row-reverse">
+            <div class="flex-row-reverse">
                 <img class="nav-icon" src="img/houseOn.png" alt="home">
                 <img class="nav-icon" src="img/locOff.png" alt="loc">
                 <img class="nav-icon" src="img/mailOff.png" alt="mail">
@@ -34,39 +42,190 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-md-2 ">
                             <img class="user-img" src="img/pPhotoRetroGirl.png" alt="">
                         </div>
-                        <div class="col-10" >
+                        <div class="col-md-10">
                             <div class="container-tabs">
-                                <div class="d-flex justify-content-center">
-                                    <div class="tabs"></div>
-                                    <div class="tabs"></div>
-                                    <div class="tabs"></div>
-                                    <div class="tabs"></div>
-                                    <div class="tabs"></div>
-                                    <div class="tabs"></div>
-                                    <div class="tabs"></div>
+                                <!-- Colocar con section con links ul con links
+                                donde las imagenes son los li-->
+
+                                <div class="d-flex flex-wrap justify-content-around">
+                                    <div class="tabs" data-toggle="modal" data-target="#textModal">
+                                        <img class="img-tabs" src="img/text.png" alt="">
+                                        <p>Text</p>
+                                    </div>
+                                    <div class="tabs" data-toggle="modal" data-target="#photoModal">
+                                        <img class="img-tabs" src="img/photo.png" alt="">
+                                        <p>Photo</p>
+                                    </div>
+                                    <div class="tabs">
+                                        <img class="img-tabs" src="img/quote.png" alt="">
+                                        <p>Quote</p>
+                                    </div>
+                                    <div class="tabs">
+                                        <img class="img-tabs" src="img/link.png" alt="">
+                                        <p>Link</p>
+                                    </div>
+                                    <div class="tabs">
+                                        <img class="img-tabs" src="img/chat.png" alt="">
+                                        <p>Chat</p>
+                                    </div>
+                                    <div class="tabs">
+                                        <img class="img-tabs" src="img/audio.png" alt="">
+                                        <p>Audio</p>
+                                    </div>
+                                    <div class="tabs">
+                                        <img class="img-tabs" src="img/video.png" alt="">
+                                        <p>Video</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                            <div class="col-2">
-                                <img class="user-img" src="img/pPhotoGuy.png" alt="">
-                            </div>
-                            <div class="col-10" >
-                                <div class="container-post">
-    
+                        <div class="col-md-2">
+                            <img class="user-img" src="img/pPhotoGuy.png" alt="">
+                        </div>
+                        <!-- colocar article, contenedor para article avatar y content -->
+                        <!-- hay dos tipos de imagenes contenido y diseño-->
+                        <!-- los diseños se ponen en css no en markdown-->
+                        <!-- dividir article con header body footer-->
+                        <!-- pensar en orden de contenido y no diseño -->
+                        <div class="col-md-10">
+                            <div class="container-post">
+                                <div class="d-flex flex-row justify-content-between container-post-info">
+                                    <div class="d-flez flex-row ">
+                                        <p>Here's a blog: bob-straus
+                                            <a href="http://">Follow</a>
+                                        </p>
+
+                                    </div>
+                                    <div class="flex-row-reverse">
+                                        <img class="icon-post1" src="img/xClose.png" alt="">
+                                        <img class="icon-post" src="img/loc.png" alt="">
+                                    </div>
+                                </div>
+                                <img class="img-post" src="img/mainPhoto.png" alt="">
+                                <div class="container-post-info">
+                                    <p>#forest #nature #darkness #blackforest</p>
+                                    <div class="d-flex">
+                                        <p>234,450 notes</p>
+                                        <div class="ml-auto">
+                                            <img class="icon-post-bottom" src="img/sideArrow.png " alt=" ">
+                                            <img class="icon-post-bottom" src="img/greyChat.png " alt=" ">
+                                            <img class="icon-post-bottom" src="img/turn.png " alt=" ">
+                                            <img class="icon-post-bottom" src="img/heart.png " alt=" ">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="container-blogs">
-
+                <!--Side content aside-contenerdor semantico a fuera y adentor bootstrap -->
+                <!-- recomende blogs section del aside dentro del section los cards -->
+                <!-- radar tambien es hijo de aside y es un section-->
+                <!-- utilizar clase card-->
+                <!--Utilizar offset-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="container-blogs">
+                            <h6 class="text-title">RECOMMENDED BLOGS</h6>
+                            <div class="d-flex flex-column">
+                                <div class="info-blogs">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="img/pPhotoR1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h6>username</h6>
+                                            <p>Tumblr blog name</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="img/plusBox.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="info-blogs">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="img/pPhotoR2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h6>username</h6>
+                                            <p>Tumblr blog name</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="img/plusBox.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="info-blogs">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="img/pPhotoR3.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h6>username</h6>
+                                            <p>Tumblr blog name</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="img/plusBox.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="info-blogs">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="img/pPhotoR4.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h6>username</h6>
+                                            <p>Tumblr blog name</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <img src="img/plusBox.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <a href="http://">EXPLORE TUMBLR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="row">
+                        <div class="container-radar">
+                            <h6>RADAR</h6>
+                            <div class="info-radar">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="img/pPhotoRadarGirl.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6>username</h6>
+                                        <p>Tumblr blog name</p>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <img src="img/plusBox.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="img-radar" src="img/radarPhoto.png" alt="">
+                            <div class="d-flex">
+                                <p>1,320 notes</p>
+                                <div class="ml-auto">
+                                    <img class="icon-post-bottom" src="img/turn.png " alt=" ">
+                                    <img class="icon-post-bottom" src="img/heart.png " alt=" ">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +234,80 @@
     <footer>
         hola
     </footer>
-    <script src="index.js"></script>
+
+    <div class="modal" id="textModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <p>mikemike</p>
+                    <img class="mr-auto modal-arrow" src="img/arrow.png" alt="">
+                    <img src="img/conf.png" alt="">
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body modal-container">
+                    <p>Title</p>
+                    <p>Your text here</p>
+                    <div class="d-flex modal-nav-icons">
+                        <p>1,320 notes</p>
+                        <div class="ml-auto">
+                            <img class="modal-icon" src="img/camera-lines.png" alt=" ">
+                            <img class="modal-icon" src="img/video-lines.png" alt=" ">
+                            <img class="modal-icon" src="img/gif.png" alt=" ">
+                            <img class="modal-icon" src="img/dots.png" alt=" ">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-between">
+                    <p>CLOSE</p>
+                    <button type="button" class="btn btn-modal" data-dismiss="modal">POST
+                        <img src="img/arrow-white.png" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="photoModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <p>mikemike</p>
+                    <img class="mr-auto modal-arrow" src="img/arrow.png" alt="">
+                    <img src="img/conf.png" alt="">
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body container-body-modal">
+                    <div class="d-flex justify-content-around">
+                        <div class="containter-img-modal">
+                            <img src="img/camera-modal.png" alt="">
+                            <p>Upload Photos</p>
+                        </div>
+                        <div class="containter-img-modal">
+                            <img src="img/globo.png" alt="">
+                            <p>Upload Photos</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-between">
+                    <p>CLOSE</p>
+                    <img class="ml-auto img-bottom-modal" src="img/bird.png" alt="">
+                    <button type="button" class="btn btn-modal" data-dismiss="modal">POST
+                        <img src="img/arrow-white.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js "></script>
 </body>
 
 </html>
