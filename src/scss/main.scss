@@ -1,5 +1,6 @@
 // load vendor libs, but just what you need
 @import "vendor/bootstrap";
+@import "font-awesome";
 
 $primary-color: #36465d;
 $primary-dark-color: #2d3a4e;
@@ -40,9 +41,8 @@ $orange-color: #ec8524;
 
 .container-tabs {
   background: white;
-  height: 100px;
   margin-left: 35px;
-  padding-top: 30px;
+  padding: 25px 50px;
 }
 
 .tabs {
@@ -241,6 +241,72 @@ h6 {
 
 .text-p {
   color: $gray-color;
+}
+
+.container-tabs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container-tabs .sprite {
+  display: block;
+}
+
+.sprite {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-bottom:16px;
+}
+
+.container-tabs a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sprite--text {
+  background-position: -0px -153px;
+  width: 26px;
+  height: 16px;
+}
+
+.container-tabs li {
+  display: inline-block;
+}
+
+
+.sprite--photo {
+  background-position: -0px -0px;
+  width: 31px;
+  height: 25px;
+}
+.sprite--video {
+  background-position: -0px -25px;
+  width: 31px;
+  height: 22px;
+}
+.sprite--audio {
+  background-position: -0px -47px;
+  width: 28px;
+  height: 29px;
+}
+.sprite--chat {
+  background-position: -0px -76px;
+  width: 27px;
+  height: 27px;
+}
+.sprite--link {
+  background-position: -0px -103px;
+  width: 27px;
+  height: 27px;
+}
+.sprite--quote {
+  background-position: -0px -130px;
+  width: 26px;
+  height: 23px;
 }
 
 main {

@@ -24,6 +24,7 @@ gulp.task("styles", () => {
       sass({
         includePaths: [
           path.join(__dirname, "node_modules/bootstrap/scss"),
+          path.join(__dirname, "node_modules/font-awesome/scss"),
           path.join(__dirname, "src/scss")
         ],
         outputStyle: "compressed"
@@ -60,13 +61,11 @@ gulp.task("img", () => {
     .pipe(gulp.dest("dist/img/"));
 });
 
-gulp.task("lint-css", function() {
-  return gulp.src("src/scss/main.scss").pipe(
-    stylelint({
-      reporters: [{ formatter: "string", console: true }]
-    })
-  );
-});
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('dist/fonts'))
+})
+
 
 /* SCSS lint task.
  * Checks for SCSS code quality.
