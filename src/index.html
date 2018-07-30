@@ -12,41 +12,42 @@
 
 <body>
     <header>
-        <nav class="navbar tumblr-nav">
+        <nav class="navbar .navbar-expand-md tumblr-nav">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-lg-1">
-                        <a href="login.html"><img class="logo" src="img/tumblrIcon.png" alt="Tumblr"></a>
+                    <div class="col-lg-1 col-md-1 col-sm-1">
+                        <a href="login.html">
+                            <i class="sprite sprite--tumblricon logo"></i>
+                        </a>
                     </div>
-
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-2">
                         <input class="form-control search-box" type="text" placeholder="Search Tumblr">
                     </div>
-
-                    <div class="col-lg-4 offset-lg-4">
+                    <div class="col-lg-4 offset-lg-4 col-md-7 offset-md-1 col-sm-8">
                         <ul class="ml-auto nav-ul">
-                            <li class="nav-li">
+                            <li class="nav-li nav-item">
                                 <i class="fa fa-home fa-lg icon-color-active" aria-hidden="true"></i>
                             </li>
-                            <li class="nav-li">
+                            <li class="nav-li nav-item">
                                 <i class="fa fa-compass fa-lg icon-color" aria-hidden="true"></i>
                             </li>
-                            <li class="nav-li">
+                            <li class="nav-li nav-item">
                                 <i class="fa fa-envelope fa-lg icon-color" aria-hidden="true"></i>
                             </li>
-                            <li class="nav-li">
+                            <li class="nav-li nav-item">
                                 <i class="fa fa-comment-o fa-lg icon-color" aria-hidden="true"></i>
                             </li>
-                            <li class="nav-li">
+                            <li class="nav-li nav-item">
                                 <i class="fa fa-bolt fa-lg icon-color" aria-hidden="true"></i>
                             </li>
-                            <li class="nav-li">
+                            <li class="nav-li nav-item">
                                 <i class="fa fa-user-o fa-lg icon-color" aria-hidden="true"></i>
                             </li>
-                            <li class="nav-li">
+                            <li class="nav-li nav-item">
                                 <i class="fa fa-pencil fa-lg icon-color-active-square nav-icon-active" aria-hidden="true"></i>
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </div>
@@ -55,50 +56,48 @@
     <main>
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-12">
                     <div class="row no-gutters">
                         <div class="col-lg-1 offset-lg-1 col-1 offset-1">
                             <img class="user-img" src="img/pPhotoRetroGirl.png" alt="">
                         </div>
                         <div class="col-lg-10 col-10 ">
                             <div class="container-tabs">
-                                <!-- Colocar con section con links ul con links
-                                donde las imagenes son los li-->
                                 <ul>
                                     <div class="d-flex flex-wrap justify-content-around">
-                                        <li>
-                                            <a href="#" data-toggle="modal" data-target="#textModal">
-                                                <i class="sprite sprite--text"></i>
+                                        <li class="tabs-li">
+                                            <a href="#" data-toggle="modal" data-target="#textModal" class="text-small-a">
+                                                <i class="sprite sprite--text tabs-sprite"></i>
                                                 Text</a>
                                         </li>
-                                        <li>
-                                            <a href="#" data-toggle="modal" data-target="#photoModal">
-                                                <i class="sprite sprite--photo"></i>
+                                        <li class="tabs-li">
+                                            <a href="#" data-toggle="modal" data-target="#photoModal" class="text-small-a">
+                                                <i class="sprite sprite--photo tabs-sprite"></i>
                                                 Photo</a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="sprite sprite--quote"></i>
+                                        <li class="tabs-li">
+                                            <a href="#" class="text-small-a">
+                                                <i class="sprite sprite--quote tabs-sprite"></i>
                                                 Quote</a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="sprite sprite--link"></i>
+                                        <li class="tabs-li">
+                                            <a href="#" class="text-small-a">
+                                                <i class="sprite sprite--link tabs-sprite"></i>
                                                 Link</a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="sprite sprite--chat"></i>
+                                        <li class="tabs-li">
+                                            <a href="#" class="text-small-a">
+                                                <i class="sprite sprite--chat tabs-sprite"></i>
                                                 Chat</a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="sprite sprite--audio"></i>
+                                        <li class="tabs-li">
+                                            <a href="#" class="text-small-a">
+                                                <i class="sprite sprite--audio tabs-sprite"></i>
                                                 Audio</a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="sprite sprite--video"></i>
+                                        <li class="tabs-li">
+                                            <a href="#" class="text-small-a">
+                                                <i class="sprite sprite--video tabs-sprite"></i>
                                                 Video</a>
                                         </li>
                                     </div>
@@ -111,33 +110,30 @@
                             <div class="col-lg-1 offset-lg-1 col-1 offset-1">
                                 <img class="user-img" src="img/pPhotoGuy.png" alt="">
                             </div>
-                            <!-- colocar article, contenedor para article avatar y content -->
-                            <!-- hay dos tipos de imagenes contenido y diseño-->
-                            <!-- los diseños se ponen en css no en markdown-->
-                            <!-- dividir article con header body footer-->
-                            <!-- pensar en orden de contenido y no diseño -->
                             <div class="col-lg-10 col-10">
                                 <div class="container-post">
-                                    <div class="d-flex justify-content-between container-post-info">
-                                        <p>Here's a blog: bob-straus
-                                            <a href="http://">Follow</a>
+                                    <div class="d-flex justify-content-between header-post">
+                                        <p class="text">Here's a blog:
+                                            <span class="bold-text">bob-straus </span>
+                                            <span class="blue-text"> Follow</span>
                                         </p>
                                         <div>
-                                            <i class="fa fa-times fa-lg icon-color " aria-hidden="true"></i>
-                                            <i class="fa fa-compass fa-lg icon-color" aria-hidden="true"></i>
+                                            <i class="fa fa-times fa-lg icon-color header-post-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-compass fa-lg icon-color header-post-icon" aria-hidden="true"></i>
                                         </div>
                                     </div>
 
-                                    <img class="img-post" src="img/mainPhoto.png" alt="">
-                                    <div class="container-post-info">
-                                        <p>#forest #nature #darkness #blackforest</p>
+                                    <img class="body-post" src="img/mainPhoto.png" alt="">
+
+                                    <div class="footer-post">
+                                        <p class="text">#forest #nature #darkness #blackforest</p>
                                         <div class="d-flex">
-                                            <p>234,450 notes</p>
+                                            <p class="text bold-text">234,450 notes</p>
                                             <div class="ml-auto">
-                                                <i class="fa fa-paper-plane fa-lg icon-color" aria-hidden="true"></i>
-                                                <i class="fa fa-comment-o fa-lg icon-color" aria-hidden="true"></i>
-                                                <i class="fa fa-retweet fa-lg icon-color" aria-hidden="true"></i>
-                                                <i class="fa fa-heart-o fa-lg icon-color" aria-hidden="true"></i>
+                                                <i class="fa fa-paper-plane fa-lg icon-color footer-post-icon" aria-hidden="true"></i>
+                                                <i class="fa fa-comment-o fa-lg icon-color footer-post-icon" aria-hidden="true"></i>
+                                                <i class="fa fa-retweet fa-lg icon-color footer-post-icon" aria-hidden="true"></i>
+                                                <i class="fa fa-heart-o fa-lg icon-color footer-post-icon" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -146,147 +142,147 @@
                         </div>
                     </div>
                 </div>
-                <!--Side content aside-contenerdor semantico a fuera y adentor bootstrap -->
-                <!-- recomende blogs section del aside dentro del section los cards -->
-                <!-- radar tambien es hijo de aside y es un section-->
-                <!-- utilizar clase card-->
-                <!--Utilizar offset-->
-                <div class="col-lg-3 offset-lg-1">
+                <div class="col-lg-3 offset-lg-1 col-9 offset-3">
                     <div class="aside">
                         <div class="row no-gutters">
-                            <div class="container-blogs">
-                                <h6 class="text-title">RECOMMENDED BLOGS</h6>
-                                <div class="d-flex flex-column">
-                                    <div class="info-blogs">
-                                        <div class="d-flex">
-                                            <div>
-                                                <img src="img/pPhotoR1.png" alt="">
-                                            </div>
-                                            <div>
-                                                <h6>username</h6>
-                                                <p>Tumblr blog name</p>
-                                            </div>
-                                            <div class="ml-auto">
-                                                <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="info-blogs">
-                                        <div class="d-flex">
-                                            <div>
-                                                <img src="img/pPhotoR2.png" alt="">
-                                            </div>
-                                            <div>
-                                                <h6>username</h6>
-                                                <p>Tumblr blog name</p>
-                                            </div>
-                                            <div class="ml-auto">
-                                                <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                            <section>
+                                <div class="container-blogs">
+                                    <p class="text-title">RECOMMENDED BLOGS</p>
+                                    <div class="d-flex flex-column">
+                                        <div class="info-blogs">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <img src="img/pPhotoR1.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <p class="text-username">username</p>
+                                                    <p class="sub-text">Tumblr blog name</p>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="info-blogs">
-                                        <div class="d-flex">
-                                            <div>
-                                                <img src="img/pPhotoR3.png" alt="">
-                                            </div>
-                                            <div>
-                                                <h6>username</h6>
-                                                <p>Tumblr blog name</p>
-                                            </div>
-                                            <div class="ml-auto">
-                                                <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="info-blogs">
-                                        <div class="d-flex">
-                                            <div>
-                                                <img src="img/pPhotoR4.png" alt="">
-                                            </div>
-                                            <div>
-                                                <h6>username</h6>
-                                                <p>Tumblr blog name</p>
-                                            </div>
-                                            <div class="ml-auto">
-                                                <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                                        <div class="line"></div>
+                                        <div class="info-blogs">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <img src="img/pPhotoR2.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <p class="text-username">username</p>
+                                                    <p class="sub-text">Tumblr blog name</p>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="line"></div>
+                                        <div class="info-blogs">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <img src="img/pPhotoR3.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <p class="text-username">username</p>
+                                                    <p class="sub-text">Tumblr blog name</p>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="info-blogs">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <img src="img/pPhotoR4.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <p class="text-username">username</p>
+                                                    <p class="sub-text">Tumblr blog name</p>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <p class="explore-text">EXPLORE TUMBLR</p>
                                     </div>
-                                    <div class="line"></div>
-                                    <a href="http://">EXPLORE TUMBLR</a>
                                 </div>
-                            </div>
+                            </section>
                         </div>
 
                         <!-- -->
                         <div class="row no-gutters">
-                            <div class="container-radar">
-                                <h6>RADAR</h6>
-                                <div class="info-radar">
+                            <section>
+                                <div class="container-radar">
+                                    <p class="text-title-radar">RADAR</p>
+                                    <div class="info-radar">
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="img/pPhotoRadarGirl.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="text-username">username</p>
+                                                <p class="sub-text">Tumblr blog name</p>
+                                            </div>
+                                            <div class="ml-auto">
+                                                <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="img-radar" src="img/radarPhoto.png" alt="">
                                     <div class="d-flex">
-                                        <div>
-                                            <img src="img/pPhotoRadarGirl.png" alt="">
-                                        </div>
-                                        <div>
-                                            <h6>username</h6>
-                                            <p>Tumblr blog name</p>
-                                        </div>
+                                        <p class="text-votes bold-text">1,320 notes</p>
                                         <div class="ml-auto">
-                                            <i class="fa fa-plus-square-o fa-lg icon-color" aria-hidden="true"></i>
+                                            <i class="fa fa-retweet fa-lg icon-color" aria-hidden="true"></i>
+                                            <i class="fa fa-heart-o fa-lg icon-color" aria-hidden="true"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <img class="img-radar" src="img/radarPhoto.png" alt="">
-                                <div class="d-flex">
-                                    <p>1,320 notes</p>
-                                    <div class="ml-auto">
-                                        <i class="fa fa-retweet fa-lg icon-color" aria-hidden="true"></i>
-                                        <i class="fa fa-heart-o fa-lg icon-color" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
 
+    <!--MODAL TEXT-->
     <div class="modal" id="textModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <p>mikemike</p>
-                    <i class="fa fa-chevron-down fa-lg icon-color" aria-hidden="true"></i>
-                    <i class="fa fa-cog fa-lg icon-color" aria-hidden="true"></i>
+                    <p class="text-name">mikemike
+                        <span class="fa fa-chevron-down arrow-modal" aria-hidden="true"></span>
+                    </p>
+                    <i class="sprite sprite--conf" aria-hidden="true"></i>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body modal-container">
-                    <p>Title</p>
-                    <p>Your text here</p>
+                    <p class="title-text-modal">Title</p>
+                    <p class="content-text-modal">Your text here</p>
                     <div class="d-flex modal-nav-icons">
-                        <p>1,320 notes</p>
+                        <p class="content-text-modal">#tags</p>
                         <div class="ml-auto">
-                            <i class="fa fa-camera fa-lg icon-color" aria-hidden="true"></i>
-                            <i class="fa fa-video-camera fa-lg icon-color" aria-hidden="true"></i>
-                            <img class="modal-icon" src="img/gif.png" alt=" ">
-                            <i class="fa fa-ellipsis-h fa-lg icon-color" aria-hidden="true"></i>
+                            <i class="sprite sprite--camera-lines modal-icon" aria-hidden="true"></i>
+                            <i class="sprite sprite--video-lines modal-icon" aria-hidden="true"></i>
+                            <i class="sprite sprite--gif modal-icon" aria-hidden="true"></i>
+                            <i class="sprite sprite--dots modal-icon" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Modal footer -->
                 <div class="modal-footer justify-content-between">
-                    <p>CLOSE</p>
+                    <p class="footer-modal-text">CLOSE</p>
                     <button type="button" class="btn btn-modal" data-dismiss="modal">POST
                         <i class="fa fa-chevron-down fa-lg icon-color-active" aria-hidden="true"></i>
                     </button>
@@ -301,29 +297,30 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <p>mikemike</p>
-                    <img class="mr-auto modal-arrow" src="img/arrow.png" alt="">
-                    <img src="img/conf.png" alt="">
+                    <p class="text-name">mikemike
+                        <span class="fa fa-chevron-down arrow-modal" aria-hidden="true"></span>
+                    </p>
+                    <i class="sprite sprite--conf" aria-hidden="true"></i>
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body container-body-modal">
                     <div class="d-flex justify-content-around">
                         <div class="containter-img-modal">
-                            <img src="img/camera-modal.png" alt="">
-                            <p>Upload Photos</p>
+                            <i class="sprite sprite--camera-modal img-modal"></i>
+                            <p class="text">Upload Photos</p>
                         </div>
                         <div class="containter-img-modal">
-                            <img src="img/globo.png" alt="">
-                            <p>Upload Photos</p>
+                            <i class="sprite sprite--globo img-modal"></i>
+                            <p class="text">Upload Photos</p>
                         </div>
                     </div>
                 </div>
                 <!-- Modal footer -->
                 <div class="modal-footer justify-content-between">
-                    <p>CLOSE</p>
-                    <img class="ml-auto img-bottom-modal" src="img/bird.png" alt="">
+                    <p class="footer-modal-text">CLOSE</p>
+                    <i class="sprite sprite--bird ml-auto img-bottom-modal"></i>
                     <button type="button" class="btn btn-modal" data-dismiss="modal">POST
-                        <img src="img/arrow-white.png" alt="">
+                        <i class="fa fa-chevron-down fa-lg icon-color-active" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
