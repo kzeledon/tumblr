@@ -72,7 +72,7 @@ gulp.task("img", () => {
 });
 
 gulp.task('fonts', function() {
-  return gulp.src('node_modules/font-awesome/fonts')
+  return gulp.src('node_modules/font-awesome/fonts/*')
     .pipe(gulp.dest('dist/fonts'))
 })
 
