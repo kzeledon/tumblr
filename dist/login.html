@@ -11,15 +11,26 @@
 
 </head>
 
-<body>
-    <div class="container-fluid background">
-        <div class="d-flex justify-content-center">
-        <div class="container-login">
-            <form>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                <a class="btn btn-login" href="http://localhost:8000/">Next</a>
-            </form>
-            <p class="sign-up">Sign Up</p>
+<body class="background">
+    <div class="d-flex justify-content-center">
+        <img class="logo-login" src="img/tumblr-logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
+                <form>
+                    <input type="email" class="form-control input-email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    <a class="btn btn-login" href="http://localhost:8000/">Next</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p class="sign-up">Sign Up</p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="footer-login">
             <div class="d-flex justify-content-around">
                 <p class="text-p">Terms</p>
                 <p class="text-p">Privacy</p>
@@ -27,9 +38,26 @@
                 <p class="text-p">Support</p>
             </div>
         </div>
-        </div>
     </div>
 
+
+
+    <!--
+        <div class="d-flex justify-content-center">
+            <div class="container-login">
+                <form>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    <a class="btn btn-login" href="http://localhost:8000/">Next</a>
+                </form>
+                <p class="sign-up">Sign Up</p>
+                <div class="d-flex justify-content-around">
+                    <p class="text-p">Terms</p>
+                    <p class="text-p">Privacy</p>
+                    <p class="text-p">Jobs</p>
+                    <p class="text-p">Support</p>
+                </div>
+            </div>
+        </div> -->
     <script src="main.js"></script>
 </body>
 
