@@ -222,6 +222,6 @@ gulp.task("scss-lint", function() {
     .pipe(postcss(processors, { syntax: syntax_scss }));
 });
 
-gulp.task("build", ["html", "styles", "png"], cb => cb);
+gulp.task("build", ["html", "styles", "png", "fonts", "js"], cb => cb);
 
-gulp.task("start", ["html", "styles", "img", "server", "watch"], cb => cb);
+gulp.task("start", ["html", "styles", "img", "fonts", "js", "server", "watch"], cb => cb);
