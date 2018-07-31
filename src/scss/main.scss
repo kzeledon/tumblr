@@ -368,13 +368,20 @@ section {
   background-repeat: no-repeat;
 }
 
+.alert-message{
+  display: none;
+  margin-top: 10px;
+  font-size: 12pt;
+  color: white;
+}
+
 .logo-login {
   padding: 0 50px;
   margin-top: 25.9vh;
 }
 
 .footer-login {
-  margin-top: 18.07vh;
+  margin-top: 6vh;
   width: 375px;
 }
 
@@ -398,13 +405,17 @@ section {
 }
 
 .input-email {
-  margin-top: 12.04vh;
+  margin-top: 9vh;
+}
+
+.input-password {
+  margin-top: 4vh;
 }
 
 .sign-up {
   color: white;
   font-weight: bold;
-  margin-top: 7.22vh;
+  margin-top: 5vh;
   text-decoration: none;
 }
 

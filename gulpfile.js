@@ -8,6 +8,8 @@ let postcss     = require('gulp-postcss');
 let reporter    = require('postcss-reporter');
 let stylelint   = require('stylelint');
 let syntax_scss = require('postcss-scss');
+let uglify = require('gulp-uglify');
+let eslint = require('gulp-eslint');
 
 /* tasks */
 // gulp.task(
@@ -33,6 +35,22 @@ gulp.task("styles", () => {
     .pipe(gulp.dest("dist/css/"));
 });
 
+/*uglify js */
+
+gulp.task('compress', function(){
+  return gulp.src('src/js/*.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('dist/js/'));
+});
+
+/* lint js*/
+gulp.task('lint', function () {
+  return gulp.src(['src/js/*.js'])
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
+});
+
 /* js task */
 gulp.task("js", () => {
   return gulp.src([
@@ -54,6 +72,7 @@ gulp.task("png", () => {
 gulp.task("watch", () => {
   gulp.watch("src/scss/**/*.scss", ["styles"], cb => cb);
   gulp.watch("src/**/*.html", ["html"], cb => cb);
+  gulp.watch("src/js/*.js", ["compress"], cb => cb);
 });
 
 gulp.task("server", () => {
@@ -222,6 +241,6 @@ gulp.task("scss-lint", function() {
     .pipe(postcss(processors, { syntax: syntax_scss }));
 });
 
-gulp.task("build", ["html", "styles", "png", "fonts", "js"], cb => cb);
+gulp.task("build", ["html", "styles", "png", "fonts", "js", "compress"], cb => cb);
 
-gulp.task("start", ["html", "styles", "img", "fonts", "js", "server", "watch"], cb => cb);
+gulp.task("start", ["html", "styles", "img", "fonts", "js", "compress","server", "watch"], cb => cb);

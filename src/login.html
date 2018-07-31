@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tumblr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
 </head>
@@ -18,15 +17,22 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-                <form>
-                    <input type="email" class="form-control input-email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                    <a class="btn btn-login" href="index.html">Next</a>
+                <form id="loginForm" action="index.html" onsubmit="login(event)">
+                    <input type="email" class="form-control input-email" id="InputEmail" placeholder="Email" required>
+                    <input type="password" class="form-control input-password" id="InputPass" placeholder="Password" required>
+                    <button class="btn btn-login" type="submit" id="btnLogin">Next</button>
                 </form>
             </div>
         </div>
     </div>
     <div class="d-flex justify-content-center">
         <a href="#" class="sign-up">Sign Up</a>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <p class="alert-message" id="errorMessage">
+            <strong>Error!</strong> Wrong username or password.
+        </p>
     </div>
 
     <div class="d-flex justify-content-center">
@@ -48,6 +54,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!--MAIN JS-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
